@@ -1,21 +1,21 @@
-import React from 'react'
+import React from 'react';
 
 function Zergling() {
-  Zergling.defaultProps = {
-    
-  }
-  return (
-    <div>I'm a zergling.</div>
-  )
+  Zergling.defaultProps = {};
+  return <div>I'm a zergling.</div>;
 }
 
 function Roach() {
-  return (
-    <div>I'm a roach.</div>
-  )
+  return <div>I'm a roach.</div>;
 }
 
-export {
-  Zergling,
-  Roach,
+function Hatchery(props) {
+  return (
+    <div>
+      <h1>Hatchery</h1>
+      <div>{props.children}</div>
+    </div>
+  );
 }
+
+export { Zergling, Roach, Hatchery };
