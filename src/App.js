@@ -1,13 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-import { ThemeProvider } from './ThemeContext.js';
-import Document from './Document.js';
-import { log } from 'handlebars';
+import { ThemeProvider } from "./ThemeContext.js";
+import Document from "./Document.js";
 
 function App() {
-  const theme = { org: 'adma', color: 'red' };
+  const theme = { org: "adma", color: "red" };
 
   return (
     <div className="App">
